@@ -27,7 +27,7 @@ SECRET_KEY = '77nlzkq-1bk_h5lh!sj9!)8vo^$m#^cn-3c1=gf-(v9&qw+liw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['obscure-wave-22976.herokuapp.com']
 
 
 # Application definition
