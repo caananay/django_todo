@@ -1,0 +1,183 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$FYq0eljgsuu6$puVkcMJ2Akn8jvSkrw8aG0Fobxhdm59QjW1V/3TIGIw=",
+        "last_login": "2017-08-02T18:24:30.640Z",
+        "is_superuser": true,
+        "username": "caananay",
+        "first_name": "",
+        "last_name": "",
+        "email": "doncanny@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-07-28T09:44:57.190Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$S7FCzQHhcwJR$HYRLnU5+oZ0eLwGdQpMhl6DqZNFX1jcmVMq73LP2OKQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "canny",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-07-28T19:27:08.006Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$9Z4SDdsUD6wz$9Pg/L17DQEM8j0koir7UU2sUTDk1CFImhpINFtdCeus=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "philip",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-07-31T21:11:59.503Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$vkwXHJJkX1r8$7uFysTQkxyOy/gWeUrCpAyTx7Cv28MFVFXM/T3sO+p0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mary",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-07-31T21:12:41.414Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "47yi8f7as83uzwe8e1t2760d9vua5o15",
+    "fields": {
+        "session_data": "ZmQ2MGExZDYwNjhjY2Q1NTZhZTAyMjE3Zjc1ZDMzNmIzNDEzMWE2Njp7Il9hdXRoX3VzZXJfaGFzaCI6IjkwOGFlN2YwMWQwOTAwODA1YjQxNDAyZWM5YjBlMTQwOTRmZDM5MjEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2017-08-11T09:47:01.904Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "il9piq9mjdsou7906bvue8u43i8ftose",
+    "fields": {
+        "session_data": "ZmQ2MGExZDYwNjhjY2Q1NTZhZTAyMjE3Zjc1ZDMzNmIzNDEzMWE2Njp7Il9hdXRoX3VzZXJfaGFzaCI6IjkwOGFlN2YwMWQwOTAwODA1YjQxNDAyZWM5YjBlMTQwOTRmZDM5MjEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2017-08-16T18:24:30.643Z"
+    }
+},
+{
+    "model": "todo.todo",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "caananay"
+        ],
+        "title": "updating title",
+        "description": "done",
+        "status": "1",
+        "updated": "2017-07-28T09:48:47Z"
+    }
+},
+{
+    "model": "todo.todo",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "caananay"
+        ],
+        "title": "working",
+        "description": "working work",
+        "status": "3",
+        "updated": "2017-07-28T09:49:36Z"
+    }
+},
+{
+    "model": "todo.todo",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "caananay"
+        ],
+        "title": "Add Put Request",
+        "description": "Create a handler for the PUT request",
+        "status": "1",
+        "updated": "2017-07-28T10:46:46.553Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-07-28T09:48:47.532Z",
+        "user": [
+            "caananay"
+        ],
+        "content_type": [
+            "todo",
+            "todo"
+        ],
+        "object_id": "1",
+        "object_repr": "shopping",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-07-28T09:49:36.297Z",
+        "user": [
+            "caananay"
+        ],
+        "content_type": [
+            "todo",
+            "todo"
+        ],
+        "object_id": "2",
+        "object_repr": "study",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-07-28T09:51:18.045Z",
+        "user": [
+            "caananay"
+        ],
+        "content_type": [
+            "todo",
+            "todo"
+        ],
+        "object_id": "3",
+        "object_repr": "working",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
