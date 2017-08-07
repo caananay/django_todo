@@ -27,7 +27,7 @@ SECRET_KEY = '77nlzkq-1bk_h5lh!sj9!)8vo^$m#^cn-3c1=gf-(v9&qw+liw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['obscure-wave-22976.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'obscure-wave-22976.herokuapp.com']
 
 
 # Application definition
@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_docs',
     'todo',
     'accounts',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -68,7 +70,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+)
 
 ROOT_URLCONF = 'django_todo.urls'
 
@@ -96,11 +106,11 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config('CLEARDB_DATABASE_URL')
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
+    # 'default': dj_database_url.config('CLEARDB_DATABASE_URL')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 
@@ -135,6 +145,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
